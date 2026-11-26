@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NusaStat — Statistik Indonesia 2024 | Beranda</title>
+<meta name="description" content="NusaStat: angka-angka resmi Indonesia — populasi, PDB, inflasi, pengangguran, kemiskinan, perdagangan, dan 34 provinsi. Sumber: BPS dan Bank Dunia.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Lewati ke konten utama</a>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><b>Nusa<span>Stat</span></b><small>Portal Statistik Indonesia</small></a>
+    <button id="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Buka menu">☰ Menu</button>
+    <nav id="site-nav" aria-label="Navigasi utama">
+      <ul>
+        <li><a href="index.html" aria-current="page">Beranda</a></li>
+        <li><a href="ekonomi.html">Ekonomi</a></li>
+        <li><a href="demografi.html">Demografi</a></li>
+        <li><a href="sosial.html">Sosial</a></li>
+        <li><a href="metodologi.html">Metodologi</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow" style="color:#7fd1cf">Republik Indonesia · Tahun acuan 2024</p>
+    <h1>Indonesia dalam angka: <em>281,6 juta jiwa, ekonomi US$ 1,4 triliun.</em></h1>
+    <p>Portal statistik nasional yang menyajikan angka resmi Indonesia — ekonomi, penduduk, dan kehidupan sosial — lengkap dengan tren lima tahun, perbandingan antarprovinsi, dan sumber di setiap angka.</p>
+    <div class="meta">
+      <span><b>38</b> provinsi</span>
+      <span><b>17.500+</b> pulau</span>
+      <span><b>4</b> besar populasi dunia</span>
+      <span><b>16</b> besar ekonomi dunia</span>
+      <span>Sumber: <b>BPS · Bank Dunia</b></span>
+    </div>
+  </div>
+</section>
+
+<main id="main" class="wrap">
+  <div class="kpis" role="list" aria-label="Indikator kunci 2024">
+    <div class="kpi accent" role="listitem"><div class="k-label">Populasi</div><div class="k-value">281,6 jt</div><div class="k-note">Pertengahan 2024 · BPS</div><div class="k-delta">▲ +0,8% per tahun</div></div>
+    <div class="kpi" role="listitem"><div class="k-label">PDB nominal</div><div class="k-value">US$ 1.396 M</div><div class="k-note">2024 · Bank Dunia</div><div class="k-delta">▲ Rp 22.139 triliun</div></div>
+    <div class="kpi" role="listitem"><div class="k-label">Pertumbuhan ekonomi</div><div class="k-value">5,03%</div><div class="k-note">PDB riil 2024 · BPS</div><div class="k-delta">▲ Lima tahun di ~5%</div></div>
+    <div class="kpi" role="listitem"><div class="k-label">PDB per kapita</div><div class="k-value">US$ 4.925</div><div class="k-note">2024 · Bank Dunia</div><div class="k-delta">▲ +27% sejak 2020</div></div>
+    <div class="kpi" role="listitem"><div class="k-label">Inflasi</div><div class="k-value">1,57%</div><div class="k-note">y-on-y, Des 2024 · BPS</div><div class="k-delta">▼ Terendah sejak 2020</div></div>
+    <div class="kpi" role="listitem"><div class="k-label">Pengangguran terbuka</div><div class="k-value">4,91%</div><div class="k-note">Agustus 2024 · BPS</div><div class="k-delta">▼ Turun dari 5,32%</div></div>
+    <div class="kpi" role="listitem"><div class="k-label">Kemiskinan</div><div class="k-value">8,57%</div><div class="k-note">September 2024 · BPS</div><div class="k-delta">▼ 24,06 jt jiwa</div></div>
+    <div class="kpi" role="listitem"><div class="k-label">IPM</div><div class="k-value">75,02</div><div class="k-note">Indeks Pembangunan Manusia 2024 · BPS</div><div class="k-delta">▲ Naik 0,63 poin</div></div>
+  </div>
+  <p class="source">Semua angka di atas adalah angka resmi yang diterbitkan BPS dan Bank Dunia. Definisi dan tautan sumber: <a href="metodologi.html">halaman Metodologi</a>.</p>
+
+  <section class="block" aria-labelledby="jelajah">
+    <div class="card">
+      <p class="eyebrow">Jelajahi berdasarkan tahun</p>
+      <h2 id="jelajah">Satu tahun, semua indikator — <span class="year-label">2024</span></h2>
+      <p class="lede">Pilih tahun untuk melihat kondisi Indonesia pada tahun itu. Angka berubah seketika; tren lima tahun lengkap ada di halaman <a href="ekonomi.html">Ekonomi</a> dan <a href="sosial.html">Sosial</a>.</p>
+      <div class="controls">
+        <label for="year-select">Tahun:</label>
+        <select id="year-select" aria-label="Pilih tahun"></select>
+      </div>
+      <div class="explorer">
+        <div class="cell"><div class="l">Pertumbuhan PDB</div><div class="v" id="yr-gdp">—</div></div>
+        <div class="cell"><div class="l">Inflasi</div><div class="v" id="yr-inflation">—</div></div>
+        <div class="cell"><div class="l">Pengangguran</div><div class="v" id="yr-unemp">—</div></div>
+        <div class="cell"><div class="l">Kemiskinan</div><div class="v" id="yr-poverty">—</div></div>
+        <div class="cell"><div class="l">Populasi</div><div class="v" id="yr-pop">—</div></div>
+        <div class="cell"><div class="l">Ekspor barang</div><div class="v" id="yr-exports">—</div></div>
+        <div class="cell"><div class="l">Impor barang</div><div class="v" id="yr-imports">—</div></div>
+        <div class="cell"><div class="l">Neraca perdagangan</div><div class="v" id="yr-balance">—</div></div>
+      </div>
+      <p class="source">Sumber: BPS (pertumbuhan, inflasi, pengangguran, kemiskinan, populasi) dan Bank Dunia (perdagangan). Tahun yang ditampilkan: <span class="year-label">2024</span>.</p>
+    </div>
+  </section>
+
+  <section class="block" aria-labelledby="tren">
+    <div class="grid2">
+      <div class="card" data-trend-host="home-trend">
+        <p class="eyebrow">Grafik tren</p>
+        <h2 id="tren">Lima tahun dalam satu grafik</h2>
+        <div class="controls">
+          <label for="metric-home">Indikator:</label>
+          <select id="metric-home" data-metric-for="home-trend">
+            <option value="gdpGrowth" selected>Pertumbuhan PDB (%)</option>
+            <option value="inflation">Inflasi (%)</option>
+            <option value="unemployment">Pengangguran (%)</option>
+            <option value="poverty">Kemiskinan (%)</option>
+            <option value="population">Populasi (juta jiwa)</option>
+            <option value="exports">Ekspor barang (US$ M)</option>
+          </select>
+          <button class="btn active" data-kind-for="home-trend" data-kind="line">Garis</button>
+          <button class="btn" data-kind-for="home-trend" data-kind="bar">Batang</button>
+        </div>
+        <div class="chart-box" id="home-trend"></div>
+        <p class="caption" id="home-trend-cap"></p>
+      </div>
+      <div class="card">
+        <p class="eyebrow">Rilis terbaru</p>
+        <h2>Apa yang baru dari data resmi</h2>
+        <ul class="release-list">
+          <li><span class="d">5 Feb 2025</span><span>Ekonomi 2024 tumbuh 5,03%; PDB Rp 22.139 triliun <span class="tag">Ekonomi</span></span></li>
+          <li><span class="d">15 Jan 2025</span><span>Kemiskinan September 2024 turun ke 8,57% <span class="tag">Sosial</span></span></li>
+          <li><span class="d">2 Jan 2025</span><span>Inflasi Desember 2024 sebesar 1,57% (y-on-y) <span class="tag">Harga</span></span></li>
+          <li><span class="d">15 Nov 2024</span><span>IPM 2024 mencapai 75,02; harapan hidup 74,15 tahun <span class="tag">Sosial</span></span></li>
+          <li><span class="d">5 Nov 2024</span><span>Pengangguran terbuka Agustus 2024 turun ke 4,91% <span class="tag">Ketenagakerjaan</span></span></li>
+        </ul>
+        <p class="source">Judul rilis mengikuti publikasi Berita Resmi Statistik BPS.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" aria-labelledby="jelajah2">
+    <div class="card">
+      <p class="eyebrow">Mulai menjelajah</p>
+      <h2 id="jelajah2">Tiga pertanyaan, tiga halaman</h2>
+      <div class="grid2">
+        <div>
+          <h3><a href="ekonomi.html">Bagaimana ekonomi berjalan?</a></h3>
+          <p>Pertumbuhan triwulanan, inflasi, perdagangan barang 2020–2024, utang, dan investasi asing.</p>
+          <h3><a href="demografi.html">Siapa tinggal di mana?</a></h3>
+          <p>Populasi 34 provinsi menurut Sensus 2020 — cari, urutkan, dan saring menurut pulau; struktur umur penduduk.</p>
+        </div>
+        <div>
+          <h3><a href="sosial.html">Bagaimana kehidupan masyarakat?</a></h3>
+          <p>Kemiskinan, pengangguran, IPM dan komponennya: harapan hidup 74,15 tahun dan harapan lama sekolah 13,21 tahun.</p>
+          <h3><a href="metodologi.html">Dari mana angka ini berasal?</a></h3>
+          <p>Definisi setiap indikator, sumber per angka, dan catatan tentang apa yang tidak bisa dibandingkan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap cols">
+    <div>
+      <h3>NusaStat — Portal Statistik Indonesia</h3>
+      <p>Situs statistik nasional independen yang menyajikan angka resmi Indonesia. Bukan situs resmi pemerintah dan tidak berafiliasi dengan BPS atau Bank Dunia.</p>
+      <p>Data terakhir mengacu pada rilis resmi 2024–2025.</p>
+    </div>
+    <div>
+      <h3>Halaman</h3>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="ekonomi.html">Ekonomi</a></li>
+        <li><a href="demografi.html">Demografi</a></li>
+        <li><a href="sosial.html">Sosial</a></li>
+        <li><a href="metodologi.html">Metodologi</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Sumber data</h3>
+      <ul>
+        <li>BPS — Statistics Indonesia</li>
+        <li>Bank Dunia — World Development Indicators</li>
+        <li>Bank Indonesia / IMF</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script type="module" src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sosial — NusaStat · Statistik Indonesia 2024</title>
+<meta name="description" content="Sosial Indonesia 2024: kemiskinan 8,57%, pengangguran 4,91%, IPM 75,02, harapan hidup 74,15 tahun. Tren 2020–2024 dari BPS.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Lewati ke konten utama</a>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><b>Nusa<span>Stat</span></b><small>Portal Statistik Indonesia</small></a>
+    <button id="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Buka menu">☰ Menu</button>
+    <nav id="site-nav" aria-label="Navigasi utama">
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="ekonomi.html">Ekonomi</a></li>
+        <li><a href="demografi.html">Demografi</a></li>
+        <li><a href="sosial.html" aria-current="page">Sosial</a></li>
+        <li><a href="metodologi.html">Metodologi</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow" style="color:#7fd1cf">Sosial · Tahun acuan 2024</p>
+    <h1>Kemiskinan di titik <em>terendah sepanjang sejarah</em>: 8,57%.</h1>
+    <p>Jumlah penduduk miskin turun menjadi 24,06 juta jiwa pada September 2024. Pengangguran 4,91%, dan IPM naik ke 75,02 — harapan hidup 74,15 tahun, harapan lama sekolah 13,21 tahun.</p>
+  </div>
+</section>
+
+<main id="main" class="wrap">
+  <div class="kpis" role="list" aria-label="Indikator sosial 2024">
+    <div class="kpi accent" role="listitem"><div class="k-label">Kemiskinan</div><div class="k-value">8,57%</div><div class="k-note">September 2024 · BPS</div><div class="k-delta">▼ Terendah sejak 1960</div></div>
+    <div class="kpi" role="listitem"><div class="k-label">Penduduk miskin</div><div class="k-value">24,06 jt</div><div class="k-note">September 2024 · BPS</div><div class="k-delta">▼ −1,16 jt dari Mar 2024</div></div>
+    <div class="kpi" role="listitem"><div class="k-label">Garis kemiskinan</div><div class="k-value">Rp 595.242</div><div class="k-note">Per kapita / bulan · BPS</div><div class="k-delta">▲ +2,11% dari Mar 2024</div></div>
+    <div class="kpi" role="listitem"><div class="k-label">Pengangguran</div><div class="k-value">4,91%</div><div class="k-note">Agustus 2024 · BPS</div><div class="k-delta">▼ Dari 5,32% (2023)</div></div>
+    <div class="kpi" role="listitem"><div class="k-label">IPM</div><div class="k-value">75,02</div><div class="k-note">2024 · BPS</div><div class="k-delta">▲ +0,63 poin</div></div>
+    <div class="kpi" role="listitem"><div class="k-label">Harapan hidup</div><div class="k-value">74,15 thn</div><div class="k-note">2024 · BPS</div><div class="k-delta">▲ Dimensi kesehatan IPM</div></div>
+    <div class="kpi" role="listitem"><div class="k-label">Harapan lama sekolah</div><div class="k-value">13,21 thn</div><div class="k-note">2024 · BPS</div><div class="k-delta">▲ Dimensi pengetahuan IPM</div></div>
+    <div class="kpi" role="listitem"><div class="k-label">Pekerja</div><div class="k-value">144,6 jt</div><div class="k-note">Agustus 2024 · BPS</div><div class="k-delta">▲ +4,7 jt dari 2023</div></div>
+  </div>
+
+  <section class="block" aria-labelledby="tren-sos">
+    <div class="grid2">
+      <div class="card" data-trend-host="sos-trend">
+        <p class="eyebrow">Grafik tren · 2020–2024</p>
+        <h2 id="tren-sos">Kemiskinan dan pengangguran membaik bersama</h2>
+        <div class="controls">
+          <label for="metric-sos">Indikator:</label>
+          <select id="metric-sos" data-metric-for="sos-trend">
+            <option value="poverty" selected>Kemiskinan (%)</option>
+            <option value="unemployment">Pengangguran (%)</option>
+          </select>
+          <button class="btn active" data-kind-for="sos-trend" data-kind="line">Garis</button>
+          <button class="btn" data-kind-for="sos-trend" data-kind="bar">Batang</button>
+        </div>
+        <div class="chart-box" id="sos-trend"></div>
+        <p class="caption" id="sos-trend-cap"></p>
+        <p>Kemiskinan sempat naik ke 10,19% pada September 2020 saat pandemi, lalu turun setiap tahun hingga 8,57% — level terendah sejak BPS pertama kali mengukur kemiskinan pada 1960.</p>
+      </div>
+      <div class="card">
+        <p class="eyebrow">Pembangunan manusia</p>
+        <h2>IPM 75,02: apa yang naik?</h2>
+        <p>IPM mengukur tiga dimensi. Pada 2024 ketiganya naik, dengan dimensi standar hidup layak dan pengetahuan naik paling tinggi.</p>
+        <dl class="defs">
+          <dt>Sehat dan berumur panjang — harapan hidup 74,15 tahun</dt>
+          <dd>Dimensi kesehatan IPM, naik dari tahun sebelumnya seiring membaiknya layanan kesehatan pascapandemi.</dd>
+          <dt>Pengetahuan — harapan lama sekolah 13,21 tahun</dt>
+          <dd>Anak yang masuk sekolah pada 2024 diperkirakan menempuh 13,21 tahun pendidikan, naik 0,06 tahun dari 2023.</dd>
+          <dt>Standar hidup layak — pengeluaran riil per kapita naik 3,71%</dt>
+          <dd>Pengeluaran riil per kapita yang disesuaikan naik Rp 442 ribu dibanding 2023 — kenaikan terbesar di antara ketiga dimensi.</dd>
+        </dl>
+        <p class="source">Sumber: BPS, Berita Resmi Statistik IPM 2024 (15 November 2024).</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" aria-labelledby="tabel-sos">
+    <div class="card">
+      <p class="eyebrow">Tabel · 2020–2024</p>
+      <h2 id="tabel-sos">Lima tahun indikator sosial</h2>
+      <div class="table-wrap">
+        <table class="data" aria-label="Tabel indikator sosial 2020-2024">
+          <thead><tr><th>Indikator</th><th class="num">2020</th><th class="num">2021</th><th class="num">2022</th><th class="num">2023</th><th class="num">2024</th><th>Sumber</th></tr></thead>
+          <tbody>
+            <tr><td>Kemiskinan, September (%)</td><td class="num">10,19</td><td class="num">9,71</td><td class="num">9,57</td><td class="num">9,36</td><td class="num"><strong>8,57</strong></td><td>BPS</td></tr>
+            <tr><td>Pengangguran terbuka, Agustus (%)</td><td class="num">7,07</td><td class="num">6,49</td><td class="num">5,86</td><td class="num">5,32</td><td class="num"><strong>4,91</strong></td><td>BPS</td></tr>
+            <tr><td>IPM (skala 0–100)</td><td class="num">72,81</td><td class="num">73,16</td><td class="num">73,77</td><td class="num">74,39</td><td class="num"><strong>75,02</strong></td><td>BPS</td></tr>
+            <tr><td>Harapan hidup (tahun)</td><td class="num">73,37</td><td class="num">73,46</td><td class="num">73,70</td><td class="num">73,93</td><td class="num"><strong>74,15</strong></td><td>BPS</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="source">IPM dan harapan hidup 2020–2024 mengikuti rangkaian revisi BPS yang diterbitkan bersama rilis IPM 2025 (BPS, 5 November 2025). Angka kemiskinan dan pengangguran memakai bulan survei yang sama setiap tahun (September dan Agustus) agar sebanding.</p>
+      <div class="note-box">
+        <h3>Dua garis kemiskinan, dua cerita</h3>
+        <p>Menurut garis kemiskinan nasional BPS, 8,57% penduduk miskin pada September 2024. Menurut garis kemiskinan global Bank Dunia yang diperbarui Juni 2025, angkanya jauh lebih tinggi — karena garisnya berbeda (Rp 1.512.000 per kapita per bulan, berbasis PPP 2021). Keduanya benar untuk tujuannya masing-masing: garis nasional mengukur kebutuhan dasar di Indonesia, garis global membandingkan antarnegara. Situs ini memakai garis nasional BPS dan menyebutkannya dengan jelas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="card">
+      <p class="eyebrow">Lanjutan</p>
+      <h2>Memahami angka-angka ini</h2>
+      <p>Apa itu garis kemiskinan? Bagaimana IPM dihitung? Mengapa angka BPS dan Bank Dunia bisa berbeda? Jawabannya ada di <a href="metodologi.html">halaman Metodologi</a>.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap cols">
+    <div>
+      <h3>NusaStat — Portal Statistik Indonesia</h3>
+      <p>Situs statistik nasional independen yang menyajikan angka resmi Indonesia. Bukan situs resmi pemerintah dan tidak berafiliasi dengan BPS atau Bank Dunia.</p>
+    </div>
+    <div>
+      <h3>Halaman</h3>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="ekonomi.html">Ekonomi</a></li>
+        <li><a href="demografi.html">Demografi</a></li>
+        <li><a href="sosial.html">Sosial</a></li>
+        <li><a href="metodologi.html">Metodologi</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Sumber data</h3>
+      <ul>
+        <li>BPS — Statistics Indonesia</li>
+        <li>Bank Dunia — World Development Indicators</li>
+        <li>Bank Indonesia / IMF</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script type="module" src="main.js"></script>
+</body>
+</html>

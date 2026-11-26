@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ekonomi — NusaStat · Statistik Indonesia 2024</title>
+<meta name="description" content="Ekonomi Indonesia 2024: PDB US$ 1.396 miliar, tumbuh 5,03%, inflasi 1,57%, ekspor US$ 264,7 miliar. Tren 2020–2024 dari BPS dan Bank Dunia.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Lewati ke konten utama</a>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><b>Nusa<span>Stat</span></b><small>Portal Statistik Indonesia</small></a>
+    <button id="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Buka menu">☰ Menu</button>
+    <nav id="site-nav" aria-label="Navigasi utama">
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="ekonomi.html" aria-current="page">Ekonomi</a></li>
+        <li><a href="demografi.html">Demografi</a></li>
+        <li><a href="sosial.html">Sosial</a></li>
+        <li><a href="metodologi.html">Metodologi</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow" style="color:#7fd1cf">Ekonomi · Tahun acuan 2024</p>
+    <h1>Ekonomi tumbuh <em>5,03%</em> — lima tahun berturut-turut di sekitar 5%.</h1>
+    <p>PDB nominal mencapai US$ 1.396 miliar (Rp 22.139 triliun). Inflasi mereda ke 1,57%, perdagangan barang surplus US$ 31,0 miliar, dan investasi asing langsung US$ 24,2 miliar.</p>
+  </div>
+</section>
+
+<main id="main" class="wrap">
+  <div class="kpis" role="list" aria-label="Indikator ekonomi 2024">
+    <div class="kpi accent" role="listitem"><div class="k-label">PDB nominal</div><div class="k-value">US$ 1.396 M</div><div class="k-note">2024 · Bank Dunia</div><div class="k-delta">▲ Peringkat 16 dunia</div></div>
+    <div class="kpi" role="listitem"><div class="k-label">Pertumbuhan PDB</div><div class="k-value">5,03%</div><div class="k-note">2024 · BPS</div><div class="k-delta">▲ Q4 2024: 5,02%</div></div>
+    <div class="kpi" role="listitem"><div class="k-label">PDB per kapita</div><div class="k-value">US$ 4.925</div><div class="k-note">2024 · Bank Dunia</div><div class="k-delta">▲ US$ 3.887 pada 2020</div></div>
+    <div class="kpi" role="listitem"><div class="k-label">Inflasi</div><div class="k-value">1,57%</div><div class="k-note">y-on-y, Des 2024 · BPS</div><div class="k-delta">▼ Dari 2,61% (2023)</div></div>
+    <div class="kpi" role="listitem"><div class="k-label">Ekspor barang</div><div class="k-value">US$ 264,7 M</div><div class="k-note">2024 · Bank Dunia</div><div class="k-delta">▲ Surplus US$ 31,0 M</div></div>
+    <div class="kpi" role="listitem"><div class="k-label">Impor barang</div><div class="k-value">US$ 233,7 M</div><div class="k-note">2024 · Bank Dunia</div><div class="k-delta">▲ Dari US$ 221,9 M</div></div>
+    <div class="kpi" role="listitem"><div class="k-label">FDI masuk</div><div class="k-value">US$ 24,2 M</div><div class="k-note">2024 · Bank Dunia</div><div class="k-delta">▲ Investasi asing langsung</div></div>
+    <div class="kpi" role="listitem"><div class="k-label">Utang pemerintah</div><div class="k-value">39,8% PDB</div><div class="k-note">2024 · BPS / Kemenkeu</div><div class="k-delta">— Di bawah 40% PDB</div></div>
+  </div>
+
+  <section class="block" aria-labelledby="tren-eko">
+    <div class="card" data-trend-host="eko-trend">
+      <p class="eyebrow">Grafik tren · 2020–2024</p>
+      <h2 id="tren-eko">Lima tahun ekonomi Indonesia</h2>
+      <p class="lede">Kontraksi pandemi 2020, pemulihan 2021–2022, lalu stabil di sekitar 5%. Pilih indikator dan ubah jenis grafik — angkanya mengikuti pilihan Anda.</p>
+      <div class="controls">
+        <label for="metric-eko">Indikator:</label>
+        <select id="metric-eko" data-metric-for="eko-trend">
+          <option value="gdpGrowth" selected>Pertumbuhan PDB (%)</option>
+          <option value="inflation">Inflasi (%)</option>
+          <option value="exports">Ekspor barang (US$ M)</option>
+          <option value="imports">Impor barang (US$ M)</option>
+        </select>
+        <button class="btn active" data-kind-for="eko-trend" data-kind="line">Garis</button>
+        <button class="btn" data-kind-for="eko-trend" data-kind="bar">Batang</button>
+      </div>
+      <div class="chart-box" id="eko-trend"></div>
+      <p class="caption" id="eko-trend-cap"></p>
+      <div class="table-wrap">
+        <table class="data" aria-label="Tabel indikator ekonomi 2020-2024">
+          <thead><tr><th>Indikator</th><th class="num">2020</th><th class="num">2021</th><th class="num">2022</th><th class="num">2023</th><th class="num">2024</th><th>Sumber</th></tr></thead>
+          <tbody>
+            <tr><td>Pertumbuhan PDB (% y-on-y)</td><td class="num">−2,07</td><td class="num">3,69</td><td class="num">5,31</td><td class="num">5,05</td><td class="num"><strong>5,03</strong></td><td>BPS</td></tr>
+            <tr><td>Inflasi (% per tahun)</td><td class="num">1,68</td><td class="num">1,87</td><td class="num">5,51</td><td class="num">2,61</td><td class="num"><strong>1,57</strong></td><td>BPS</td></tr>
+            <tr><td>Ekspor barang (US$ miliar)</td><td class="num">163,2</td><td class="num">231,6</td><td class="num">292,0</td><td class="num">258,8</td><td class="num"><strong>264,7</strong></td><td>Bank Dunia</td></tr>
+            <tr><td>Impor barang (US$ miliar)</td><td class="num">141,6</td><td class="num">196,2</td><td class="num">237,4</td><td class="num">221,9</td><td class="num"><strong>233,7</strong></td><td>Bank Dunia</td></tr>
+            <tr><td>Neraca perdagangan barang (US$ miliar)</td><td class="num">21,6</td><td class="num">35,4</td><td class="num">54,6</td><td class="num">36,9</td><td class="num"><strong>31,0</strong></td><td>Bank Dunia (dihitung)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="source">Neraca = ekspor − impor. Angka 2024 untuk inflasi adalah y-on-y Desember; inflasi rata-rata tahunan dapat berbeda sedikit.</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="grid2">
+      <div class="card">
+        <p class="eyebrow">Dalam tahun berjalan</p>
+        <h2>Pertumbuhan per triwulan, 2024</h2>
+        <p>Empat triwulan 2024 semuanya tumbuh di sekitar 5%, dengan triwulan I tertinggi (5,11%) dan triwulan III terendah (4,95%).</p>
+        <div class="chart-box" id="quarterly-chart"></div>
+        <p class="caption">Pertumbuhan PDB riil (% y-on-y) per triwulan · Sumber: BPS</p>
+      </div>
+      <div class="card">
+        <p class="eyebrow">Membaca angka</p>
+        <h2>Tiga hal yang perlu diperhatikan</h2>
+        <dl class="defs">
+          <dt>Pertumbuhan 5% itu stabil, bukan stagnan</dt>
+          <dd>Sejak 2022 Indonesia tumbuh 5,31%, 5,05%, lalu 5,03% — di atas rata-rata dunia yang sekitar 3,4% (Bank Dunia).</dd>
+          <dt>Inflasi 1,57% adalah yang terendah dalam lima tahun</dt>
+          <dd>Setelah memuncak 5,51% pada 2022, inflasi turun dua tahun berturut-turut. Harga pangan dan energi yang mereda menjadi penjelas utamanya.</dd>
+          <dt>Surplus dagang menyusut dari puncaknya</dt>
+          <dd>Surplus barang 2024 (US$ 31,0 miliar) lebih kecil dari 2022 (US$ 54,6 miliar) karena impor tumbuh lebih cepat daripada ekspor.</dd>
+        </dl>
+        <p class="source">Lihat <a href="metodologi.html">Metodologi</a> untuk definisi PDB, inflasi, dan perdagangan barang.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="card">
+      <p class="eyebrow">Lanjutan</p>
+      <h2>Dari ekonomi ke masyarakat</h2>
+      <p>Pertumbuhan saja tidak bercerita lengkap: <a href="sosial.html">apakah kemiskinan dan pengangguran ikut membaik?</a> Dan <a href="demografi.html">di provinsi mana penduduk Indonesia tinggal?</a></p>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap cols">
+    <div>
+      <h3>NusaStat — Portal Statistik Indonesia</h3>
+      <p>Situs statistik nasional independen yang menyajikan angka resmi Indonesia. Bukan situs resmi pemerintah dan tidak berafiliasi dengan BPS atau Bank Dunia.</p>
+    </div>
+    <div>
+      <h3>Halaman</h3>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="ekonomi.html">Ekonomi</a></li>
+        <li><a href="demografi.html">Demografi</a></li>
+        <li><a href="sosial.html">Sosial</a></li>
+        <li><a href="metodologi.html">Metodologi</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Sumber data</h3>
+      <ul>
+        <li>BPS — Statistics Indonesia</li>
+        <li>Bank Dunia — World Development Indicators</li>
+        <li>Bank Indonesia / IMF</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script type="module" src="main.js"></script>
+</body>
+</html>

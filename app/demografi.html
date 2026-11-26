@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Demografi — NusaStat · Statistik Indonesia 2024</title>
+<meta name="description" content="Demografi Indonesia: 281,6 juta jiwa (2024), 34 provinsi menurut Sensus Penduduk 2020 — Jawa Barat 48,27 juta jiwa terbesar. Tabel bisa dicari, diurutkan, dan disaring per pulau.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Lewati ke konten utama</a>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><b>Nusa<span>Stat</span></b><small>Portal Statistik Indonesia</small></a>
+    <button id="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Buka menu">☰ Menu</button>
+    <nav id="site-nav" aria-label="Navigasi utama">
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="ekonomi.html">Ekonomi</a></li>
+        <li><a href="demografi.html" aria-current="page">Demografi</a></li>
+        <li><a href="sosial.html">Sosial</a></li>
+        <li><a href="metodologi.html">Metodologi</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow" style="color:#7fd1cf">Demografi · Sensus 2020 &amp; estimasi 2024</p>
+    <h1><em>281,6 juta</em> jiwa di 38 provinsi — 56% tinggal di Jawa.</h1>
+    <p>Indonesia negara berpenduduk terbesar ke-4 di dunia. Jawa Barat adalah provinsi terpadat (48,27 juta jiwa pada Sensus 2020); Kalimantan Utara yang paling sedikit (701.814 jiwa).</p>
+  </div>
+</section>
+
+<main id="main" class="wrap">
+  <div class="kpis" role="list" aria-label="Indikator demografi">
+    <div class="kpi accent" role="listitem"><div class="k-label">Populasi 2024</div><div class="k-value">281,6 jt</div><div class="k-note">Estimasi pertengahan tahun · BPS</div><div class="k-delta">▲ +0,8% per tahun</div></div>
+    <div class="kpi" role="listitem"><div class="k-label">Sensus 2020</div><div class="k-value">270,2 jt</div><div class="k-note">Sensus Penduduk 2020 · BPS</div><div class="k-delta">▲ +13,7% dari 2010</div></div>
+    <div class="kpi" role="listitem"><div class="k-label">Kepadatan</div><div class="k-value">149 /km²</div><div class="k-note">2023 · Bank Dunia</div><div class="k-delta">— Luas 1.892.555 km²</div></div>
+    <div class="kpi" role="listitem"><div class="k-label">Penduduk perkotaan</div><div class="k-value">58,8%</div><div class="k-note">2024 · Bank Dunia</div><div class="k-delta">▲ Terus naik</div></div>
+    <div class="kpi" role="listitem"><div class="k-label">Usia 0–14 tahun</div><div class="k-value">24,6%</div><div class="k-note">2024 · Bank Dunia</div><div class="k-delta">— Generasi muda besar</div></div>
+    <div class="kpi" role="listitem"><div class="k-label">Usia 15–64 tahun</div><div class="k-value">68,1%</div><div class="k-note">2024 · Bank Dunia</div><div class="k-delta">— Bonus demografi</div></div>
+    <div class="kpi" role="listitem"><div class="k-label">Usia 65+ tahun</div><div class="k-value">7,3%</div><div class="k-note">2024 · Bank Dunia</div><div class="k-delta">▲ Menua perlahan</div></div>
+    <div class="kpi" role="listitem"><div class="k-label">Fertilitas total</div><div class="k-value">2,1</div><div class="k-note">Anak per perempuan, 2023 · Bank Dunia</div><div class="k-delta">— Tepat di tingkat pengganti</div></div>
+  </div>
+
+  <section class="block" aria-labelledby="umur">
+    <div class="grid2">
+      <div class="card">
+        <p class="eyebrow">Struktur umur · 2024</p>
+        <h2 id="umur">Dua dari tiga penduduk berusia kerja</h2>
+        <div class="donut-row">
+          <div id="age-donut"></div>
+          <ul class="legend">
+            <li><span class="sw" style="background:#0b2a4a"></span>15–64 tahun — usia kerja <b>68,1%</b></li>
+            <li><span class="sw" style="background:#0e7c7b"></span>0–14 tahun — anak <b>24,6%</b></li>
+            <li><span class="sw" style="background:#c98a1b"></span>65+ tahun — lansia <b>7,3%</b></li>
+          </ul>
+        </div>
+        <p class="source">Sumber: Bank Dunia, World Development Indicators 2024. Ketiga kelompok berjumlah 100%.</p>
+      </div>
+      <div class="card" data-trend-host="demo-trend" data-metric="population">
+        <p class="eyebrow">Grafik tren · 2020–2024</p>
+        <h2>Populasi terus tumbuh, lajunya melambat</h2>
+        <div class="controls">
+          <button class="btn active" data-kind-for="demo-trend" data-kind="line">Garis</button>
+          <button class="btn" data-kind-for="demo-trend" data-kind="bar">Batang</button>
+        </div>
+        <div class="chart-box" id="demo-trend"></div>
+        <p class="caption" id="demo-trend-cap"></p>
+        <p>Dari 270,2 juta jiwa pada Sensus 2020 menjadi 281,6 juta pada pertengahan 2024 — tambah sekitar 2,8 juta jiwa per tahun.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" aria-labelledby="provinsi">
+    <div class="card">
+      <p class="eyebrow">Per provinsi · Sensus Penduduk 2020</p>
+      <h2 id="provinsi">10 provinsi terpadat</h2>
+      <p class="lede">Enam provinsi berpenduduk di atas 10 juta jiwa — lima di antaranya di Jawa. Jawa Barat saja menampung 17,9% penduduk Indonesia.</p>
+      <div class="chart-box" id="prov-top10"></div>
+      <p class="caption">Populasi menurut Sensus Penduduk 2020 · Sumber: BPS</p>
+    </div>
+  </section>
+
+  <section class="block" aria-labelledby="tabel-prov">
+    <div class="card">
+      <p class="eyebrow">Tabel lengkap · 34 provinsi</p>
+      <h2 id="tabel-prov">Semua provinsi, bisa dicari dan diurutkan</h2>
+      <p class="lede">Klik judul kolom untuk mengurutkan. Ketik nama provinsi atau ibu kota pada kotak pencarian, atau saring menurut pulau.</p>
+      <div class="controls">
+        <label for="prov-search">Cari:</label>
+        <input type="search" id="prov-search" placeholder="cth: Jawa, Medan, Papua…" aria-label="Cari provinsi atau ibu kota">
+        <label for="prov-island">Pulau:</label>
+        <select id="prov-island">
+          <option>Semua</option>
+          <option>Jawa</option>
+          <option>Sumatera</option>
+          <option>Kalimantan</option>
+          <option>Sulawesi</option>
+          <option>Bali &amp; Nusa Tenggara</option>
+          <option>Maluku &amp; Papua</option>
+        </select>
+      </div>
+      <p class="source" id="prov-count"></p>
+      <div class="table-wrap">
+        <table class="data" aria-label="Populasi provinsi menurut Sensus Penduduk 2020">
+          <thead><tr>
+            <th>#</th>
+            <th data-sort="name">Provinsi ↕</th>
+            <th data-sort="capital">Ibu kota ↕</th>
+            <th data-sort="island">Pulau ↕</th>
+            <th data-sort="pop" class="num sorted">Populasi 2020 ↕</th>
+            <th class="num">Pangsa</th>
+          </tr></thead>
+          <tbody id="prov-body" data-sort="pop" data-dir="desc"></tbody>
+        </table>
+      </div>
+      <div class="note-box" style="margin-top:16px">
+        <h3>Catatan: 34 atau 38 provinsi?</h3>
+        <p>Sensus 2020 mencatat 34 provinsi. Pada 2022, empat provinsi baru dibentuk di Papua (Papua Selatan, Papua Tengah, Papua Pegunungan, Papua Barat Daya), sehingga jumlahnya menjadi 38. Tabel di atas memakai batas Sensus 2020 agar angkanya sebanding.</p>
+      </div>
+      <p class="source">Sumber: BPS, Sensus Penduduk 2020. Pangsa = populasi provinsi ÷ 270.203.917 jiwa.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap cols">
+    <div>
+      <h3>NusaStat — Portal Statistik Indonesia</h3>
+      <p>Situs statistik nasional independen yang menyajikan angka resmi Indonesia. Bukan situs resmi pemerintah dan tidak berafiliasi dengan BPS atau Bank Dunia.</p>
+    </div>
+    <div>
+      <h3>Halaman</h3>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="ekonomi.html">Ekonomi</a></li>
+        <li><a href="demografi.html">Demografi</a></li>
+        <li><a href="sosial.html">Sosial</a></li>
+        <li><a href="metodologi.html">Metodologi</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Sumber data</h3>
+      <ul>
+        <li>BPS — Statistics Indonesia</li>
+        <li>Bank Dunia — World Development Indicators</li>
+        <li>Bank Indonesia / IMF</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script type="module" src="main.js"></script>
+</body>
+</html>
